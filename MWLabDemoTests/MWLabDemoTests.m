@@ -1,6 +1,6 @@
 //
-//  MWLabDeomTests.m
-//  MWLabDeomTests
+//  MWLabDemoTests.m
+//  MWLabDemoTests
 //
 //  Created by mingwei on 1/10/17.
 //  Copyright © 2017 keyue. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface MWLabDeomTests : XCTestCase
+@interface MWLabDemoTests : XCTestCase
 
 @end
 
-@implementation MWLabDeomTests
+@implementation MWLabDemoTests
 
 - (void)setUp {
     [super setUp];
