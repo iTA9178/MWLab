@@ -15,6 +15,7 @@
 		511E08751E24D95C00EF48EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511E08731E24D95C00EF48EC /* LaunchScreen.storyboard */; };
 		511E08801E24D95C00EF48EC /* MWLabDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E087F1E24D95C00EF48EC /* MWLabDemoTests.m */; };
 		511E088B1E24D95C00EF48EC /* MWLabDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E088A1E24D95C00EF48EC /* MWLabDemoUITests.m */; };
+		DFED7730624DB3BAA56C667B /* libPods-MWLabDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA31FD5FFFB703945885CED /* libPods-MWLabDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43B07807DEE1C116AAA27C01 /* Pods-MWLabDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLabDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MWLabDemo/Pods-MWLabDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4FA31FD5FFFB703945885CED /* libPods-MWLabDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MWLabDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		511E08621E24D95C00EF48EC /* MWLabDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWLabDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		511E08661E24D95C00EF48EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		511E08681E24D95C00EF48EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		511E08861E24D95C00EF48EC /* MWLabDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWLabDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		511E088A1E24D95C00EF48EC /* MWLabDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWLabDemoUITests.m; sourceTree = "<group>"; };
 		511E088C1E24D95C00EF48EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CBE586FB15FC90EAB71BA43 /* Pods-MWLabDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLabDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWLabDemo/Pods-MWLabDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFED7730624DB3BAA56C667B /* libPods-MWLabDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				511E087E1E24D95C00EF48EC /* MWLabDemoTests */,
 				511E08891E24D95C00EF48EC /* MWLabDemoUITests */,
 				511E08631E24D95C00EF48EC /* Products */,
+				C8DD97962370713AA8EB4F20 /* Pods */,
+				AE3188ACAF1D383601E7BFEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = MWLabDemoUITests;
 			sourceTree = "<group>";
 		};
+		AE3188ACAF1D383601E7BFEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FA31FD5FFFB703945885CED /* libPods-MWLabDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8DD97962370713AA8EB4F20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43B07807DEE1C116AAA27C01 /* Pods-MWLabDemo.debug.xcconfig */,
+				8CBE586FB15FC90EAB71BA43 /* Pods-MWLabDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 511E088F1E24D95C00EF48EC /* Build configuration list for PBXNativeTarget "MWLabDemo" */;
 			buildPhases = (
+				3E7CC849F7BD6C914CFBC491 /* [CP] Check Pods Manifest.lock */,
 				511E085E1E24D95C00EF48EC /* Sources */,
 				511E085F1E24D95C00EF48EC /* Frameworks */,
 				511E08601E24D95C00EF48EC /* Resources */,
+				E3D9A82E3EBE10DF8A911D4B /* [CP] Embed Pods Frameworks */,
+				4585C58EBE0BFF3BDF994A0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E7CC849F7BD6C914CFBC491 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4585C58EBE0BFF3BDF994A0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MWLabDemo/Pods-MWLabDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D9A82E3EBE10DF8A911D4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MWLabDemo/Pods-MWLabDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		511E085E1E24D95C00EF48EC /* Sources */ = {
@@ -420,6 +495,7 @@
 		};
 		511E08901E24D95C00EF48EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B07807DEE1C116AAA27C01 /* Pods-MWLabDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MWLabDemo/Info.plist;
@@ -431,6 +507,7 @@
 		};
 		511E08911E24D95C00EF48EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CBE586FB15FC90EAB71BA43 /* Pods-MWLabDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MWLabDemo/Info.plist;
@@ -505,6 +582,7 @@
 				511E08911E24D95C00EF48EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		511E08921E24D95C00EF48EC /* Build configuration list for PBXNativeTarget "MWLabDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +591,7 @@
 				511E08941E24D95C00EF48EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		511E08951E24D95C00EF48EC /* Build configuration list for PBXNativeTarget "MWLabDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +600,7 @@
 				511E08971E24D95C00EF48EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
