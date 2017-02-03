@@ -14,16 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - QMUIKit (1.2)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - QMUIKit (~> 1.2)
   - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  QMUIKit: 8657144089e3a825ceb3c0f0ffd96c8f5de0653a
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: ac87fd7f0b91294e02b6e1c86661def6dc83f6c9
+PODFILE CHECKSUM: cb8c8e2591b0097a0f7a819f1979621db4297993
 
 COCOAPODS: 1.0.1
