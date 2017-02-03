@@ -104,6 +104,7 @@
 		515EFBD21E44183200A58CC1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EFBD11E44183200A58CC1 /* libz.tbd */; };
 		515EFBD41E44183C00A58CC1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EFBD31E44183C00A58CC1 /* CFNetwork.framework */; };
 		515EFBD61E44184800A58CC1 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EFBD51E44184800A58CC1 /* libstdc++.6.0.9.tbd */; };
+		51EC88E31E442E5B0011E327 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EC88E21E442E5B0011E327 /* ViewController.m */; };
 		DFED7730624DB3BAA56C667B /* libPods-MWLabDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA31FD5FFFB703945885CED /* libPods-MWLabDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -309,6 +310,8 @@
 		515EFBD31E44183C00A58CC1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		515EFBD51E44184800A58CC1 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		515EFBD71E44192400A58CC1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		51EC88E11E442E5B0011E327 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		51EC88E21E442E5B0011E327 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8CBE586FB15FC90EAB71BA43 /* Pods-MWLabDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLabDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWLabDemo/Pods-MWLabDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -412,6 +415,8 @@
 		515EFABD1E440ECC00A58CC1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				51EC88E11E442E5B0011E327 /* ViewController.h */,
+				51EC88E21E442E5B0011E327 /* ViewController.m */,
 				515EFAE21E4416FD00A58CC1 /* Common */,
 				515EFAFC1E4416FD00A58CC1 /* Demos */,
 			);
@@ -927,6 +932,7 @@
 				515EFB921E4416FD00A58CC1 /* QDGridViewController.m in Sources */,
 				515EFBBF1E4416FD00A58CC1 /* QDStaticTableViewController.m in Sources */,
 				515EFBBE1E4416FD00A58CC1 /* QDSearchViewController.m in Sources */,
+				51EC88E31E442E5B0011E327 /* ViewController.m in Sources */,
 				515EFB941E4416FD00A58CC1 /* QDImagePreviewExampleViewController.m in Sources */,
 				515EFBA11E4416FD00A58CC1 /* QDActivityIndicator.m in Sources */,
 				515EFB9B1E4416FD00A58CC1 /* QDPieProgressViewController.m in Sources */,
