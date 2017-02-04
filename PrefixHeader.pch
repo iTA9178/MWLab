@@ -25,4 +25,20 @@
 #import "QDCommonUI.h"
 #import "QDUIHelper.h"
 
+#define kBaseURL @"http://i.play.163.com"
+
+#define kNewsListURL @"/user/article/list/"
+#define kNewsDetailURL @"/news/appDetail/"
+
+#define kHotGameCommentURL @"/news/v2/hottie/"
+#define kNewGameCommentURL @"/news/v2/newtie/"
+
+#define kNewsRecommendTopicURL @"/news/topicOrderSource/list"
+#define kNewsRecommendImageInfosURL @"/news/config/config_focus_img/list/"
+
+#define kHotGameZoneURL @"/news/discuz/forum_recommend_detail"
+#define kZoneDiscuzURL @"/news/discuz/discuz_model_v2/list/center"
+#define kDiscuzDetailURL @"http://bbs.d.163.com/api/mobile/index.php"
+#define kZoneDiscuzImageURL @"/news/discuz/discuz_model/fid_img"
+
 #endif

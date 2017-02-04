@@ -20,8 +20,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self demoConfigNetwork];
-    [self demoNormalRequest];
+//    [self demoConfigNetwork];
+//    [self demoNormalRequest];
 //    [self demoUploadRequest];
 //    [self demoDownloadRequest];
 //    [self demoCancelRequest];
@@ -32,7 +32,7 @@
 - (void)demoConfigNetwork {
     
     [XMCenter setupConfig:^(XMConfig *config) {
-        config.generalServer = @"general server address";
+        config.generalServer = kBaseURL;
         config.generalHeaders = @{@"general-header": @"general header value"};
         config.generalParameters = @{@"general-parameter": @"general parameter value"};
         config.callbackQueue = dispatch_get_main_queue(); // If `NULL` (default), a private concurrent queue is used.
@@ -53,10 +53,11 @@
 - (void)demoNormalRequest {
     
     [XMCenter sendRequest:^(XMRequest *request) {
-        request.server = @"http://example.com/v1/";
-        request.api = @"foo/bar";
-        request.parameters = @{@"param1": @"value1", @"param2": @"value2"};
-        request.headers = @{@"User-Agent": @"Custom User Agent"};
+//        request.server = @"http://example.com/v1/";
+//        request.api = kNewsListURL;
+//        request.parameters = @{@"param1": @"value1", @"param2": @"value2"};
+//        request.headers = @{@"User-Agent": @"Custom User Agent"};
+        request.url = [NSString stringWithFormat:@"%@/user/article/list/0/20",kBaseURL];
     } onSuccess:^(id responseObject) {
         NSLog(@"onSuccess: %@", responseObject);
     } onFailure:^(NSError *error) {

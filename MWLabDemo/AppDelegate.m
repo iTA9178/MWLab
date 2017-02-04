@@ -83,37 +83,32 @@
 - (void)createTabBarController {
     QDTabBarViewController *tabBarViewController = [[QDTabBarViewController alloc] init];
     
-//    // QMUIKit
-//    QDUIKitViewController *uikitViewController = [[QDUIKitViewController alloc] init];
-//    uikitViewController.hidesBottomBarWhenPushed = NO;
-//    QDNavigationController *uikitNavController = [[QDNavigationController alloc] initWithRootViewController:uikitViewController];
-//    uikitNavController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"QMUIKit" image:[UIImageMake(@"icon_tabbar_uikit") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:0];
-//    
-//    // UIComponents
-//    QDComponentsViewController *componentViewController = [[QDComponentsViewController alloc] init];
-//    componentViewController.hidesBottomBarWhenPushed = NO;
-//    QDNavigationController *componentNavController = [[QDNavigationController alloc] initWithRootViewController:componentViewController];
-//    componentNavController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"Components" image:[UIImageMake(@"icon_tabbar_component") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_component_selected") tag:1];
-//    
-//    // Lab
-//    QDLabViewController *labViewController = [[QDLabViewController alloc] init];
-//    labViewController.hidesBottomBarWhenPushed = NO;
-//    QDNavigationController *labNavController = [[QDNavigationController alloc] initWithRootViewController:labViewController];
-//    labNavController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"Lab" image:[UIImageMake(@"icon_tabbar_lab") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_lab_selected") tag:2];
-//    
-//    // window root controller
-//    tabBarViewController.viewControllers = @[uikitNavController, componentNavController, labNavController];
-//    self.window.rootViewController = tabBarViewController;
-//    [self.window makeKeyAndVisible];
-    
-    // XMNetWorking
-    
-    ViewController *viewController = [[ViewController alloc] init];
-    viewController.hidesBottomBarWhenPushed = NO;
-    QDNavigationController *uikitNavController = [[QDNavigationController alloc] initWithRootViewController:viewController];
+    // QMUIKit
+    QDUIKitViewController *uikitViewController = [[QDUIKitViewController alloc] init];
+    uikitViewController.hidesBottomBarWhenPushed = NO;
+    QDNavigationController *uikitNavController = [[QDNavigationController alloc] initWithRootViewController:uikitViewController];
     uikitNavController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"QMUIKit" image:[UIImageMake(@"icon_tabbar_uikit") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:0];
     
-    tabBarViewController.viewControllers = @[uikitNavController];
+    // UIComponents
+    QDComponentsViewController *componentViewController = [[QDComponentsViewController alloc] init];
+    componentViewController.hidesBottomBarWhenPushed = NO;
+    QDNavigationController *componentNavController = [[QDNavigationController alloc] initWithRootViewController:componentViewController];
+    componentNavController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"Components" image:[UIImageMake(@"icon_tabbar_component") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_component_selected") tag:1];
+    
+    // Lab
+    QDLabViewController *labViewController = [[QDLabViewController alloc] init];
+    labViewController.hidesBottomBarWhenPushed = NO;
+    QDNavigationController *labNavController = [[QDNavigationController alloc] initWithRootViewController:labViewController];
+    labNavController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"Lab" image:[UIImageMake(@"icon_tabbar_lab") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_lab_selected") tag:2];
+    
+    // XMNetWorking
+    ViewController *viewController = [[ViewController alloc] init];
+    viewController.hidesBottomBarWhenPushed = NO;
+    QDNavigationController *xmNetworkingNavController = [[QDNavigationController alloc] initWithRootViewController:viewController];
+    xmNetworkingNavController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"QMUIKit" image:[UIImageMake(@"icon_tabbar_uikit") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:3];
+    
+    // window root controller
+    tabBarViewController.viewControllers = @[uikitNavController, componentNavController, labNavController, xmNetworkingNavController];
     self.window.rootViewController = tabBarViewController;
     [self.window makeKeyAndVisible];
 }
