@@ -13,6 +13,10 @@
 		511E08751E24D95C00EF48EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511E08731E24D95C00EF48EC /* LaunchScreen.storyboard */; };
 		511E08801E24D95C00EF48EC /* MWLabDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E087F1E24D95C00EF48EC /* MWLabDemoTests.m */; };
 		511E088B1E24D95C00EF48EC /* MWLabDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 511E088A1E24D95C00EF48EC /* MWLabDemoUITests.m */; };
+		512000041E4805B700886C38 /* MWDragableManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 512000011E4805B700886C38 /* MWDragableManagerView.m */; };
+		512000051E4805B700886C38 /* MWDragableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 512000031E4805B700886C38 /* MWDragableView.m */; };
+		512000111E4812E000886C38 /* MWNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 512000101E4812E000886C38 /* MWNetworkingViewController.m */; };
+		512000141E4812F300886C38 /* MWDragableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 512000131E4812F300886C38 /* MWDragableViewController.m */; };
 		515EFAC91E440ECC00A58CC1 /* XMCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 515EFAC21E440ECC00A58CC1 /* XMCenter.m */; };
 		515EFACA1E440ECC00A58CC1 /* XMEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 515EFAC51E440ECC00A58CC1 /* XMEngine.m */; };
 		515EFACB1E440ECC00A58CC1 /* XMRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 515EFAC71E440ECC00A58CC1 /* XMRequest.m */; };
@@ -104,7 +108,6 @@
 		515EFBD21E44183200A58CC1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EFBD11E44183200A58CC1 /* libz.tbd */; };
 		515EFBD41E44183C00A58CC1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EFBD31E44183C00A58CC1 /* CFNetwork.framework */; };
 		515EFBD61E44184800A58CC1 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 515EFBD51E44184800A58CC1 /* libstdc++.6.0.9.tbd */; };
-		51EC88E31E442E5B0011E327 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EC88E21E442E5B0011E327 /* ViewController.m */; };
 		DFED7730624DB3BAA56C667B /* libPods-MWLabDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA31FD5FFFB703945885CED /* libPods-MWLabDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +144,14 @@
 		511E08861E24D95C00EF48EC /* MWLabDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWLabDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		511E088A1E24D95C00EF48EC /* MWLabDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWLabDemoUITests.m; sourceTree = "<group>"; };
 		511E088C1E24D95C00EF48EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		512000001E4805B700886C38 /* MWDragableManagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWDragableManagerView.h; sourceTree = "<group>"; };
+		512000011E4805B700886C38 /* MWDragableManagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDragableManagerView.m; sourceTree = "<group>"; };
+		512000021E4805B700886C38 /* MWDragableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWDragableView.h; sourceTree = "<group>"; };
+		512000031E4805B700886C38 /* MWDragableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDragableView.m; sourceTree = "<group>"; };
+		5120000F1E4812E000886C38 /* MWNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWNetworkingViewController.h; sourceTree = "<group>"; };
+		512000101E4812E000886C38 /* MWNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWNetworkingViewController.m; sourceTree = "<group>"; };
+		512000121E4812F300886C38 /* MWDragableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWDragableViewController.h; sourceTree = "<group>"; };
+		512000131E4812F300886C38 /* MWDragableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDragableViewController.m; sourceTree = "<group>"; };
 		515EFAC11E440ECC00A58CC1 /* XMCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCenter.h; sourceTree = "<group>"; };
 		515EFAC21E440ECC00A58CC1 /* XMCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCenter.m; sourceTree = "<group>"; };
 		515EFAC31E440ECC00A58CC1 /* XMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMConst.h; sourceTree = "<group>"; };
@@ -310,8 +321,6 @@
 		515EFBD31E44183C00A58CC1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		515EFBD51E44184800A58CC1 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		515EFBD71E44192400A58CC1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
-		51EC88E11E442E5B0011E327 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		51EC88E21E442E5B0011E327 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8CBE586FB15FC90EAB71BA43 /* Pods-MWLabDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLabDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MWLabDemo/Pods-MWLabDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -374,6 +383,7 @@
 		511E08641E24D95C00EF48EC /* MWLabDemo */ = {
 			isa = PBXGroup;
 			children = (
+				51EC88E61E45E5240011E327 /* Vender */,
 				515EFACD1E440F5700A58CC1 /* Resources */,
 				515EFACE1E440F5700A58CC1 /* UI */,
 				515EFACC1E440EF200A58CC1 /* AppDelegate */,
@@ -412,11 +422,45 @@
 			path = MWLabDemoUITests;
 			sourceTree = "<group>";
 		};
+		512000061E48074300886C38 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		512000071E48074300886C38 /* Dragable */ = {
+			isa = PBXGroup;
+			children = (
+				512000121E4812F300886C38 /* MWDragableViewController.h */,
+				512000131E4812F300886C38 /* MWDragableViewController.m */,
+			);
+			path = Dragable;
+			sourceTree = "<group>";
+		};
+		512000081E48074300886C38 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5120000F1E4812E000886C38 /* MWNetworkingViewController.h */,
+				512000101E4812E000886C38 /* MWNetworkingViewController.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5120FFFF1E4805B700886C38 /* MWDragableView */ = {
+			isa = PBXGroup;
+			children = (
+				512000001E4805B700886C38 /* MWDragableManagerView.h */,
+				512000011E4805B700886C38 /* MWDragableManagerView.m */,
+				512000021E4805B700886C38 /* MWDragableView.h */,
+				512000031E4805B700886C38 /* MWDragableView.m */,
+			);
+			path = MWDragableView;
+			sourceTree = "<group>";
+		};
 		515EFABD1E440ECC00A58CC1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				51EC88E11E442E5B0011E327 /* ViewController.h */,
-				51EC88E21E442E5B0011E327 /* ViewController.m */,
 				515EFAE21E4416FD00A58CC1 /* Common */,
 				515EFAFC1E4416FD00A58CC1 /* Demos */,
 			);
@@ -545,6 +589,9 @@
 				515EFB001E4416FD00A58CC1 /* Components */,
 				515EFB2F1E4416FD00A58CC1 /* Lab */,
 				515EFB431E4416FD00A58CC1 /* UIKit */,
+				512000061E48074300886C38 /* Animation */,
+				512000071E48074300886C38 /* Dragable */,
+				512000081E48074300886C38 /* Network */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -709,6 +756,14 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		51EC88E61E45E5240011E327 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				5120FFFF1E4805B700886C38 /* MWDragableView */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
 		AE3188ACAF1D383601E7BFEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -804,7 +859,7 @@
 				TargetAttributes = {
 					511E08611E24D95C00EF48EC = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = W9TT39799W;
+						DevelopmentTeam = ZBSDH25Q98;
 						ProvisioningStyle = Automatic;
 					};
 					511E087A1E24D95C00EF48EC = {
@@ -932,7 +987,6 @@
 				515EFB921E4416FD00A58CC1 /* QDGridViewController.m in Sources */,
 				515EFBBF1E4416FD00A58CC1 /* QDStaticTableViewController.m in Sources */,
 				515EFBBE1E4416FD00A58CC1 /* QDSearchViewController.m in Sources */,
-				51EC88E31E442E5B0011E327 /* ViewController.m in Sources */,
 				515EFB941E4416FD00A58CC1 /* QDImagePreviewExampleViewController.m in Sources */,
 				515EFBA11E4416FD00A58CC1 /* QDActivityIndicator.m in Sources */,
 				515EFB9B1E4416FD00A58CC1 /* QDPieProgressViewController.m in Sources */,
@@ -969,6 +1023,8 @@
 				515EFBB81E4416FD00A58CC1 /* QDInterceptBackButtonEventViewController.m in Sources */,
 				515EFB991E4416FD00A58CC1 /* QDMultipleImagePickerPreviewViewController.m in Sources */,
 				515EFB801E4416FD00A58CC1 /* QDCommonGroupListViewController.m in Sources */,
+				512000041E4805B700886C38 /* MWDragableManagerView.m in Sources */,
+				512000051E4805B700886C38 /* MWDragableView.m in Sources */,
 				515EFBC51E4416FD00A58CC1 /* QDUIKitViewController.m in Sources */,
 				515EFBAC1E4416FD00A58CC1 /* QDChangeNavBarStyleViewController.m in Sources */,
 				515EFBA21E4416FD00A58CC1 /* QDAllAnimationViewController.m in Sources */,
@@ -976,6 +1032,7 @@
 				515EFB971E4416FD00A58CC1 /* QDModalPresentationViewController.m in Sources */,
 				515EFBAA1E4416FD00A58CC1 /* QDAlertController.m in Sources */,
 				515EFBB51E4416FD00A58CC1 /* QDGhostButtonViewController.m in Sources */,
+				512000111E4812E000886C38 /* MWNetworkingViewController.m in Sources */,
 				515EFB8A1E4416FD00A58CC1 /* QDAssetsManagerViewController.m in Sources */,
 				515EFB8D1E4416FD00A58CC1 /* QDCustomToastContentView.m in Sources */,
 				515EFB9A1E4416FD00A58CC1 /* QDNavigationTitleViewController.m in Sources */,
@@ -996,6 +1053,7 @@
 				515EFBB41E4416FD00A58CC1 /* QDFoldCollectionViewLayout.m in Sources */,
 				515EFBAF1E4416FD00A58CC1 /* QDCollectionStackDemoViewController.m in Sources */,
 				515EFBBD1E4416FD00A58CC1 /* QDNormalButtonViewController.m in Sources */,
+				512000141E4812F300886C38 /* MWDragableViewController.m in Sources */,
 				515EFB9E1E4416FD00A58CC1 /* QDSaveVideoToSpecifiedAlbumViewController.m in Sources */,
 				515EFB8E1E4416FD00A58CC1 /* QDDialogViewController.m in Sources */,
 				515EFBA41E4416FD00A58CC1 /* QDCAShapeLoadingViewController.m in Sources */,
@@ -1154,7 +1212,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = W9TT39799W;
+				DEVELOPMENT_TEAM = ZBSDH25Q98;
 				GCC_PREFIX_HEADER = /Users/mingwei/Works/MWLab/PrefixHeader.pch;
 				INFOPLIST_FILE = MWLabDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1169,7 +1227,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = W9TT39799W;
+				DEVELOPMENT_TEAM = ZBSDH25Q98;
 				GCC_PREFIX_HEADER = /Users/mingwei/Works/MWLab/PrefixHeader.pch;
 				INFOPLIST_FILE = MWLabDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

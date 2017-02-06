@@ -1,32 +1,38 @@
 //
-//  ViewController.m
-//  XMNetworkingDemo
+//  MWNetworkingViewController.m
+//  MWLabDemo
 //
-//  Created by Zubin Kang on 12/12/2016.
-//  Copyright © 2016 XMNetworking. All rights reserved.
+//  Created by mingwei on 2/6/17.
+//  Copyright © 2017 keyue. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MWNetworkingViewController.h"
 #import "XMNetworking.h"
 
-@interface ViewController ()
+@interface MWNetworkingViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MWNetworkingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
-//    [self demoConfigNetwork];
-//    [self demoNormalRequest];
-//    [self demoUploadRequest];
-//    [self demoDownloadRequest];
-//    [self demoCancelRequest];
-//    [self demoBatchRequest];
-//    [self demoChainRequest];
+    [self demoConfigNetwork];
+    [self demoNormalRequest];
+    //    [self demoUploadRequest];
+    //    [self demoDownloadRequest];
+    //    [self demoCancelRequest];
+    //    [self demoBatchRequest];
+    //    [self demoChainRequest];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 - (void)demoConfigNetwork {
@@ -53,10 +59,10 @@
 - (void)demoNormalRequest {
     
     [XMCenter sendRequest:^(XMRequest *request) {
-//        request.server = @"http://example.com/v1/";
-//        request.api = kNewsListURL;
-//        request.parameters = @{@"param1": @"value1", @"param2": @"value2"};
-//        request.headers = @{@"User-Agent": @"Custom User Agent"};
+        //        request.server = @"http://example.com/v1/";
+        //        request.api = kNewsListURL;
+        //        request.parameters = @{@"param1": @"value1", @"param2": @"value2"};
+        //        request.headers = @{@"User-Agent": @"Custom User Agent"};
         request.url = [NSString stringWithFormat:@"%@/user/article/list/0/20",kBaseURL];
     } onSuccess:^(id responseObject) {
         NSLog(@"onSuccess: %@", responseObject);
@@ -95,7 +101,7 @@
 }
 
 - (void)demoDownloadRequest {
-
+    
     [XMCenter sendRequest:^(XMRequest *request) {
         request.url = @"http://example.com/v1/testDownFile.zip";
         request.downloadSavePath = [NSHomeDirectory() stringByAppendingString:@"/Documents/"];
@@ -192,11 +198,6 @@
     [XMCenter cancelRequest:identifier onCancel:^(XMRequest *request) {
         NSLog(@"onCancel");
     }];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

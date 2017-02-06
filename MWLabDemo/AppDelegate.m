@@ -15,7 +15,8 @@
 #import "QDComponentsViewController.h"
 #import "QDLabViewController.h"
 #import "QMUIConfigurationTemplate.h"
-#import "ViewController.h"
+#import "MWNetworkingViewController.h"
+#import "MWDragableViewController.h"
 
 @interface AppDelegate ()
 
@@ -102,13 +103,19 @@
     labNavController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"Lab" image:[UIImageMake(@"icon_tabbar_lab") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_lab_selected") tag:2];
     
     // XMNetWorking
-    ViewController *viewController = [[ViewController alloc] init];
-    viewController.hidesBottomBarWhenPushed = NO;
-    QDNavigationController *xmNetworkingNavController = [[QDNavigationController alloc] initWithRootViewController:viewController];
-    xmNetworkingNavController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"QMUIKit" image:[UIImageMake(@"icon_tabbar_uikit") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:3];
+    MWNetworkingViewController *netViewController = [[MWNetworkingViewController alloc] init];
+    netViewController.hidesBottomBarWhenPushed = NO;
+    QDNavigationController *networkingNavController = [[QDNavigationController alloc] initWithRootViewController:netViewController];
+    networkingNavController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"QMUIKit" image:[UIImageMake(@"icon_tabbar_uikit") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:3];
+    
+    // XMNetWorking
+    MWDragableViewController *dragableViewController = [[MWDragableViewController alloc] init];
+    dragableViewController.hidesBottomBarWhenPushed = NO;
+    QDNavigationController *dragableNavController = [[QDNavigationController alloc] initWithRootViewController:dragableViewController];
+    dragableNavController.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"QMUIKit" image:[UIImageMake(@"icon_tabbar_uikit") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:4];
     
     // window root controller
-    tabBarViewController.viewControllers = @[uikitNavController, componentNavController, labNavController, xmNetworkingNavController];
+    tabBarViewController.viewControllers = @[uikitNavController, componentNavController, labNavController, networkingNavController, dragableNavController];
     self.window.rootViewController = tabBarViewController;
     [self.window makeKeyAndVisible];
 }
