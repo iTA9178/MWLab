@@ -105,7 +105,7 @@
         
     }];
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    [self.chooseInView resetWithimage:image];
+    [self.chooseInView resetWithImage:image];
 }
 
 @end

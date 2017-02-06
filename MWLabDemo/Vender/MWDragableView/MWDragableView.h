@@ -31,6 +31,6 @@ typedef NS_ENUM (int,MWDragableViewStatus) {
 @property (nonatomic, assign) MWDragableViewStatus dragableViewStatus;
 @property (nonatomic, weak) NSObject <MWDragableViewDelegate> *delegate;
 
-- (void)resetWithimage:(UIImage *)image;
+- (void)resetWithImage:(UIImage *)image;
 
 @end

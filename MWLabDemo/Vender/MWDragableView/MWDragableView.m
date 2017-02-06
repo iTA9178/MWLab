@@ -31,11 +31,11 @@
 
 - (void)UIInit {
     self.clipsToBounds = YES;
-    _imageView = [[UIImageView alloc]initWithFrame:self.bounds];
+    _imageView = [[UIImageView alloc] initWithFrame:self.bounds];
     _imageView.userInteractionEnabled = YES;
     [self addSubview:_imageView];
     
-    changePicBtn = [[UIButton alloc]init];
+    changePicBtn = [[UIButton alloc] init];
     [changePicBtn setImage:[UIImage imageNamed:@"icon_grid_image"] forState:UIControlStateNormal];
     changePicBtn.bounds = CGRectMake(0, 0, 30, 30);
     changePicBtn.center = _imageView.center;
@@ -44,18 +44,18 @@
     [self addSubview:changePicBtn];
 }
 
-- (void)resetWithimage:(UIImage *)image {
+- (void)resetWithImage:(UIImage *)image {
     _image = image;
     [_imageView removeFromSuperview];
-    _imageView = [[UIImageView alloc]initWithFrame:self.bounds];
+    _imageView = [[UIImageView alloc] initWithFrame:self.bounds];
     _imageView.image = image;
     [self addSubview:_imageView];
     [self bringSubviewToFront:changePicBtn];
     [self setDragableViewStatus:MWDragableViewStatusNone];
 }
 
-- (void)setImage:(UIImage *)image{
-    [self resetWithimage:image];
+- (void)setImage:(UIImage *)image {
+    [self resetWithImage:image];
 }
 
 - (void)setDragableViewStatus:(MWDragableViewStatus)dragableViewStatus {
@@ -67,8 +67,8 @@
     
     if(!bordView){
         CGRect rect = [self.superview convertRect:self.frame toView:self.superview];
-        bordView = [[UIView alloc]init];
-        bordView.frame =rect;
+        bordView = [[UIView alloc] init];
+        bordView.frame = rect;
         bordView.backgroundColor = [UIColor clearColor];
         bordView.userInteractionEnabled = NO;
         [self.superview addSubview:bordView];
@@ -99,11 +99,10 @@
         default:
             break;
     }
-    
 }
 
-- (void)changePic:(UIButton*)btn{
-    if(self.delegate && [_delegate respondsToSelector:@selector(changePicBtnClick:)]){
+- (void)changePic:(UIButton*)btn {
+    if(self.delegate && [_delegate respondsToSelector:@selector(changePicBtnClick:)]) {
         [self.delegate changePicBtnClick:self];
     }
 }

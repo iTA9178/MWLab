@@ -65,7 +65,7 @@
         [view addGestureRecognizer:swipeUp];
         
         // 长按手势
-        UILongPressGestureRecognizer *longPress=[[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPress:)];
+        UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPress:)];
         longPress.delegate = self;
         [view addGestureRecognizer:longPress];
     }
@@ -77,11 +77,11 @@
 }
 
 - (void)swipeDefault:(UISwipeGestureRecognizer *)swipe {
-    if (swipe.direction==UISwipeGestureRecognizerDirectionRight) {
+    if (swipe.direction == UISwipeGestureRecognizerDirectionRight) {
         NSLog(@"向右轻扫");
-    } else if(swipe.direction==UISwipeGestureRecognizerDirectionLeft) {
+    } else if(swipe.direction == UISwipeGestureRecognizerDirectionLeft) {
         NSLog(@"向左轻扫");
-    } else if(swipe.direction==UISwipeGestureRecognizerDirectionUp) {
+    } else if(swipe.direction == UISwipeGestureRecognizerDirectionUp) {
         NSLog(@"向上轻扫");
     } else {
         NSLog(@"向下轻扫");
@@ -119,7 +119,7 @@
     
     CGPoint loc = [pan locationInView:dragableView];
     CGPoint location = [pan locationInView:dragableView.superview];
-    if(loc.x<0 || loc.x>dragableView.bounds.size.width || loc.y<0|| loc.y>dragableView.bounds.size.height) {
+    if(loc.x < 0 || loc.x > dragableView.bounds.size.width || loc.y < 0|| loc.y > dragableView.bounds.size.height) {
         if(!_snapshotView) {
             _snapshotView = [self customSnapshotFromView:dragableView.imageView];
             _snapshotView.parentView = dragableView;
@@ -171,21 +171,20 @@
     CGPoint transP = [pan translationInView:dragableView];
     
     // 不能超过1/4
-    if(transP.x >0 && dragableView.imageView.frame.origin.x >= dragableView.frame.size.width*3/4.f){
+    if(transP.x > 0 && dragableView.imageView.frame.origin.x >= dragableView.frame.size.width * 3/4.f) {
         return;
-    } else if (transP.x < 0 && dragableView.imageView.frame.origin.x+ dragableView.imageView.frame.size.width <= dragableView.frame.size.width/4.f) {
+    } else if (transP.x < 0 && dragableView.imageView.frame.origin.x + dragableView.imageView.frame.size.width <= dragableView.frame.size.width / 4.f) {
         return;
-    } else if (transP.y > 0 && dragableView.imageView.frame.origin.y >= dragableView.frame.size.height*3/4.f) {
+    } else if (transP.y > 0 && dragableView.imageView.frame.origin.y >= dragableView.frame.size.height * 3/4.f) {
         return;
-    } else if (transP.y < 0 && dragableView.imageView.frame.origin.y+ dragableView.imageView.frame.size.height<= dragableView.frame.size.height/4.f) {
+    } else if (transP.y < 0 && dragableView.imageView.frame.origin.y + dragableView.imageView.frame.size.height <= dragableView.frame.size.height / 4.f) {
         return;
     }
     
-    dragableView.imageView.center = CGPointMake(dragableView.imageView.center.x+transP.x, dragableView.imageView.center.y+transP.y);
+    dragableView.imageView.center = CGPointMake(dragableView.imageView.center.x + transP.x, dragableView.imageView.center.y + transP.y);
     
     //    dragableView.imageView.transform = CGAffineTransformTranslate(dragableView.imageView.transform, transP.x, transP.y);
     [pan setTranslation:CGPointZero inView:dragableView];
-    
 }
 
 - (void)tap:(UITapGestureRecognizer *)tap {
@@ -230,8 +229,8 @@
     MWDragableView *parentView = (MWDragableView *)_snapshotView.parentView;
     if(view && view != parentView) {
         UIImage *image = view.image;
-        [view resetWithimage:parentView.image];
-        [parentView resetWithimage:image];
+        [view resetWithImage:parentView.image];
+        [parentView resetWithImage:image];
     }
     [_snapshotView removeFromSuperview];
     _snapshotView = nil;
@@ -256,7 +255,7 @@
 // 是否在别的view里面
 - (BOOL)isInDragableViews:(CGPoint)loc {
     for(UIView *view in _dragableViews) {
-        if(loc.x > view.frame.origin.x && loc.y > view.frame.origin.y && loc.x < view.frame.origin.x+view.frame.size.width && loc.y < view.frame.origin.y+view.frame.size.height){
+        if(loc.x > view.frame.origin.x && loc.y > view.frame.origin.y && loc.x < view.frame.origin.x + view.frame.size.width && loc.y < view.frame.origin.y + view.frame.size.height) {
             return YES;
         }
     }
@@ -265,7 +264,7 @@
 
 - (UIView *)inDragableViews:(CGPoint)loc {
     for(UIView *view in _dragableViews) {
-        if(loc.x > view.frame.origin.x && loc.y > view.frame.origin.y && loc.x < view.frame.origin.x+view.frame.size.width && loc.y < view.frame.origin.y+view.frame.size.height){
+        if(loc.x > view.frame.origin.x && loc.y > view.frame.origin.y && loc.x < view.frame.origin.x + view.frame.size.width && loc.y < view.frame.origin.y + view.frame.size.height) {
             return view;
         }
     }
